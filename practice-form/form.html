@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+</head>
+<body>
+  <a href="../index.html">На главную</a>
+  <!-- action адрес отправки -->
+  <!-- Прописывается для метода  post  - enctype="multipart/form-data" -->
+  <form action="#" method="POST" enctype="multipart/form-data">
+    <div>
+      <h3>Имя</h3>
+      <!-- value - то что введет пользователь -->
+      <!-- placeholder  задает подпись поля -->
+      <input tabindex="1" placeholder="Подпись поля" type="text" name="username" value="">
+    </div>
+    <div>
+      <h3>Пароль</h3>
+      <input tabindex="2" type="password" name="userpassword" value="">
+    </div>
+    <div>
+      <h3>Телефон</h3>
+      <!-- tel - используется для телефона -->
+      <input tabindex="3" type="tel">
+    </div>
+    <div>
+      <!-- для radio кнопок  tabindex должен быть одинаковым -->
+      <h3>Radio</h3>
+      <p><input tabindex="4" type="radio" name="beer" value="light" checked >Светлое пиво</p>
+      <p><input tabindex="4" type="radio" name="beer" value="dark">Темное пиво</p>
+    </div>
+    <div>
+      <h3>Checkbox</h3>
+      <p><input tabindex="5" type="checkbox" name="car1" value="yes 1" >Наличие авто 1</p>
+      <p><input tabindex="6" type="checkbox" name="car3" value="yes 2" checked >Наличие авто 2</p>
+      <p><input disabled tabindex="7" type="checkbox" name="car4" value="yes 3" >Наличие авто 3</p>
+      <p><input tabindex="8" type="checkbox" name="car5" value="yes 4" >Наличие авто 4</p>
+    </div>
+    <div>
+      <h3>File</h3>
+      <p><input tabindex="9" type="file" name="foto"></p>
+    </div>
+    <div>
+      <h3>Textarea</h3>
+      <!-- cols="30" rows="10" - размеры поля не нужны задаются через css -->
+      <textarea tabindex="10" name="text" id="не нужен" cols="30" rows="10"></textarea>
+    </div>
+    <div>
+      <h3>Выпадающий список</h3>
+      <select tabindex="11" name="color" id="">
+        <option value="red">Красный</option>
+        <option value="yellow">Желтый</option>
+        <option value="blue">Синий</option>
+        <option value="green">Зеленый</option>
+      </select>
+      <h3>Множественный выпадающий список</h3>
+      <!-- для получения множественного списока добывляем атрибут multiple -->
+      <!-- selected - этемент будет выбран по умолчанию. -->
+      <select tabindex="12" name="color" multiple id="">
+        <option value="red">Красный</option>
+        <option selected value="yellow">Желтый</option>
+        <option value="blue">Синий</option>
+        <option disabled value="green">Зеленый</option>
+      </select>
+      <div>
+        <h3>Ryjgrb</h3>
+        <!-- у атрибут type - submit - отправит форма а reset ее очистит -->
+        <button tabindex="13" type="reset">Кнопка очистить форму</button>
+        <button tabindex="14" type="submit">Кнопка отправить</button>
+      </div>
+      <p>Для всех тегов кроме формы можно применить атрибут <b>disabled</b></p>
+    </div>
+  </form>
+</body>
+</html> 
