@@ -16,4 +16,122 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 
+body {
+  background-color: #e8e8e8;
+  background: url('../img/bg.png') 54% -25% no-repeat;
+}
 
+.wrapper {
+  margin: 0 auto;
+  width: 840px;
+  text-align: center;
+}
+
+.top {
+  &__header {
+    margin-top: 163px;
+    margin-bottom: 11px;
+    font-family: Arial, Regular, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 20px;
+    color: rgba(39, 61, 70, 0.6);
+  }
+
+  // .top__text
+
+  &__text {
+    margin-bottom: 64px;
+    font-size: 36px;
+    line-height: 50px;
+    color:rgba(39, 61, 70, 0.8);
+  }
+}
+
+.main {
+  &__img-con {
+    display: inline-block;
+    margin-bottom: 81px;
+    border: 10px solid #fff;
+  }
+
+  &__img {
+    box-shadow: 0 0 65px rgba(15, 16, 16, 0.15);
+  }
+
+  // .main__text
+  &__text {
+    margin: 0 auto;
+    max-width: 740px;
+    text-align: left;
+  }
+
+  &__text  p {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 40px;
+    color:rgba(39, 61, 70, 0.8);
+  }
+
+  // .main__list
+
+  &__list {
+    margin: 0 auto;
+    max-width: 750px;
+    margin-bottom: 50px;
+
+  }
+
+  &__link {
+    margin-right: 66%;
+    padding: 0px 30px 0px 0px;
+    background: url('../img/icons/arrow.svg') 85% no-repeat;
+
+    & span {
+      text-align: left;
+      
+    }
+  }
+}
+.list {
+
+  // .list__item
+
+  &__item {
+    font-family: Arial, Regular, sans-serif;
+    padding-left: 33px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 36px;
+    color: #273d46;
+
+    background: url('../img/icons/check.png') left no-repeat;
+    font-size: 20px;
+
+    &:nth-child(2) {
+      color: #80b7b3;
+    }
+
+    &:nth-child(3) {
+      color: #273d46;
+      font-weight: 700;
+    }
+
+    &:nth-child(4){
+      color: #aeb5b7;
+      text-decoration: line-through;
+    }
+  }  
+}
+
+.btn {
+  display: inline-block;
+
+  min-width: 200px;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 30px;
+  background-color: #80b7b3;
+}
